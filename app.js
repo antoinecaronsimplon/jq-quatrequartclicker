@@ -1,5 +1,11 @@
-var count=0;
-$('.cake').click(function(){
-	$('counter span').text('2')
-	console.log('slt');
-});
+$(document).ready(function()
+{	
+	var counter= 0;
+	$('.cake').click(function(){
+		counter ++;
+		$('.counter span').text(counter);
+		if(counter % 20 === 0){
+			alert("counter");
+		}
+	});
+});	
